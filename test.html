@@ -55,6 +55,32 @@
 
         }
 
+        /* .financiamiento{
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            grid-template-columns: auto;
+            width: 200px;
+            height: 500px;
+            font-size: 25px;
+            
+            background-color: beige;
+            padding: 20px;
+        } */
+
+        .cotizacion{
+            display: grid;
+            
+            align-items: center;
+            justify-content: center;
+            width: 1000px;
+            height: 500px;
+            font-size: 25px;
+            
+            background-color: beige;
+            padding: 20px;
+        }
+
     </style>
 </head>
 <body>
@@ -91,7 +117,7 @@
    
 
 </div>
-
+<form action="cotizacion" class="cotizacion">
 <div class="formulario">
     <label for="Nombre">Nombre Completo
         <input type="text" id="name">
@@ -103,14 +129,41 @@
 </div>
 
 <div class="financiamiento">
-    <label for="Contado">Contado
-        <input type="radio" id="contado">
-    </label>
+   <input type="radio" id="contado" name="financiamiento" value="contado">
+   <label for="contado">Contado</label>
     <br>
-    <label for="Credito">Credito
-        <input type="radio" id="credito">
-    </label>
+    <input type="radio" id="credito" name="financiamiento" value="credito">
+   <label for="credito">Credito</label>
+    <br>
 </div>
+
+<div class="verificacion">
+    <input type="checkbox" id="ac" name="ac" value="6500">
+    <label for="ac">Aire acondicionado($6500)</label>
+    <br>
+     <input type="checkbox" id="gps" name="gps" value="2500">
+    <label for="gps">GPS($2500)</label>
+    <br>
+     <input type="checkbox" id="insurance" name="insurance" value="1500">
+    <label for="insurance">Seguro($15000)</label>
+    <br>
+     <input type="checkbox" id="quemacoco" name="quemacoco" value="9000">
+    <label for="quemacoco">Quemacoco($9000)</label>
+    <br>
+     <input type="checkbox" id="backcam" name="backcam" value="7500">
+    <label for="backcam">Camara trasera($7500)</label>
+    <br>
+     <input type="checkbox" id="ac" name="ac" value="1000">
+    <label for="ac">Aire acondicionado($1000)</label>
+    <br>
+
+
+</div>
+
+<div>
+
+</div>
+</form>
 
 </body>
 </html>
